@@ -1,53 +1,191 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeynep & Ahmet</title>
+  <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="style.css">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="theme-color" content="#f8f3e8">
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <title>Zeynep & Ahmet | Nikah Davetiyesi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="background"></div>
-<div class="particles"></div>
+  <div class="background"></div>
+  <div class="particles"></div>
 
-<div class="container">
+  <main class="page">
 
-    <div class="envelope" id="envelope">
+    <section class="hero">
 
-        <div class="envelope-back"></div>
+      <p class="small-title">Zeynep & Ahmet</p>
 
-        <div class="letter">
+      <h1>Nikah Davetiyesi</h1>
+
+      <p class="opening-text">
+        Bu özel günümüzde sizleri de aramızda görmekten mutluluk duyarız.
+      </p>
+
+      <div class="envelope-area">
+
+        <div class="envelope" id="envelope">
+
+          <div class="envelope-back"></div>
+
+          <div class="letter">
             <img
-                src="davetiye.png.PNG"
-                class="invitation-image"
-                alt="Nikah Davetiyesi">
+              src="davetiye.png.PNG"
+              class="invitation-image"
+              alt="Zeynep ve Ahmet nikah davetiyesi">
+          </div>
+
+          <div class="envelope-front"></div>
+
+          <div class="envelope-flap"></div>
+
+          <div class="seal">
+            <span>ZA</span>
+          </div>
+
         </div>
 
-        <div class="envelope-front"></div>
+      </div>
 
-        <div class="envelope-flap"></div>
-
-        <div class="seal">
-            ZA
-        </div>
-
-    </div>
-
-    <button id="openBtn" class="open-button">
+      <button
+        type="button"
+        id="openBtn"
+        class="open-button">
         Zarfı Aç
-    </button>
+      </button>
 
-</div>
+    </section>
 
-<script src="script.js"></script>
+    <section
+      class="details"
+      id="details"
+      aria-hidden="true">
+
+      <div class="countdown-card">
+
+        <p class="section-label">Büyük güne kalan</p>
+
+        <div class="countdown">
+
+          <div class="time-box">
+            <strong id="days">00</strong>
+            <span>Gün</span>
+          </div>
+
+          <div class="time-box">
+            <strong id="hours">00</strong>
+            <span>Saat</span>
+          </div>
+
+          <div class="time-box">
+            <strong id="minutes">00</strong>
+            <span>Dakika</span>
+          </div>
+
+          <div class="time-box">
+            <strong id="seconds">00</strong>
+            <span>Saniye</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="information-card">
+
+        <div class="information-item">
+          <span class="icon">📅</span>
+
+          <div>
+            <small>Tarih</small>
+            <strong>4 Eylül 2026</strong>
+          </div>
+        </div>
+
+        <div class="information-item">
+          <span class="icon">🕞</span>
+
+          <div>
+            <small>Saat</small>
+            <strong>15:30</strong>
+          </div>
+        </div>
+
+        <div class="information-item">
+          <span class="icon">📍</span>
+
+          <div>
+            <small>Yer</small>
+            <strong>Bornova Nikah Salonu</strong>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="action-buttons">
+
+        <a
+          class="action-button"
+          href="https://www.google.com/maps/search/?api=1&query=Bornova+Nikah+Salonu"
+          target="_blank"
+          rel="noopener noreferrer">
+          <span>📍</span>
+          Konuma Git
+        </a>
+
+        <button
+          type="button"
+          class="action-button"
+          id="calendarBtn">
+          <span>📅</span>
+          Takvime Ekle
+        </button>
+
+        <a
+          class="action-button whatsapp"
+          href="https://wa.me/?text=Zeynep%20ve%20Ahmet'in%204%20Eylül%202026%20tarihindeki%20nikahına%20katılacağım."
+          target="_blank"
+          rel="noopener noreferrer">
+          <span>✓</span>
+          Katılım Onayı
+        </a>
+
+      </div>
+
+      <p class="footer-message">
+        Sevgiyle bekliyoruz
+      </p>
+
+      <p class="couple-name">
+        Zeynep & Ahmet
+      </p>
+
+    </section>
+
+  </main>
+
+  <div
+    class="confetti-container"
+    id="confettiContainer">
+  </div>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
