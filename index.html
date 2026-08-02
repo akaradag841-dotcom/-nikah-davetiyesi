@@ -97,7 +97,15 @@
 
   </main>
 
-  <script src="script.js"></script>
+ <script>
+const scene = document.getElementById("invitationScene");
+const button = document.getElementById("openButton");
+
+button.addEventListener("click", function () {
+    scene.classList.add("opened");
+    button.disabled = true;
+});
+</script>
 
 </body>
 </html>
