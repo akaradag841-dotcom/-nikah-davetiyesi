@@ -1,68 +1,103 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nikah Davetiyesi</title>
+  <meta charset="UTF-8">
 
-<style>
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:linear-gradient(135deg,#f8e1e7,#fff);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
-.card{
-    background:white;
-    padding:40px;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,.2);
-    text-align:center;
-    max-width:400px;
-}
-h1{
-    color:#c2185b;
-}
-h2{
-    color:#555;
-}
-p{
-    color:#666;
-}
-button{
-    margin-top:20px;
-    padding:12px 24px;
-    border:none;
-    border-radius:30px;
-    background:#c2185b;
-    color:white;
-    font-size:16px;
-}
-</style>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
+  <title>Zeynep & Ahmet | Nikâh Davetiyesi</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="card">
-<h1>💍 Nikah Davetiyesi</h1>
+  <main class="page">
 
-<h2>Ahmet & Esra</h2>
+    <section class="invitation-scene" id="invitationScene">
 
-<p>Sizleri en mutlu günümüzde aramızda görmekten mutluluk duyarız.</p>
+      <div class="envelope">
 
-<p><b>Tarih:</b> 12 Eylül 2026</p>
+        <div class="envelope-back"></div>
 
-<p><b>Saat:</b> 19:00</p>
+        <article class="invitation-card">
 
-<p><b>Yer:</b> Düğün Salonu</p>
+          <p class="small-title">
+            BİRLİKTE YAZDIĞIMIZ
+          </p>
 
-<button>❤️ Katılacağım</button>
+          <p class="small-title">
+            EN GÜZEL HİKÂYE BAŞLIYOR
+          </p>
 
-</div>
+          <div class="heart">♡</div>
+
+          <h1>Z A</h1>
+
+          <h2>Zeynep & Ahmet</h2>
+
+          <p class="message">
+            Bu özel günümüzde sizleri de aramızda görmekten
+            mutluluk duyarız.
+          </p>
+
+          <div class="divider"></div>
+
+          <div class="details">
+
+            <div class="detail">
+              <span class="icon">♡</span>
+              <strong>TARİH</strong>
+              <p>4 Eylül 2026</p>
+            </div>
+
+            <div class="detail">
+              <span class="icon">◷</span>
+              <strong>SAAT</strong>
+              <p>15:30</p>
+            </div>
+
+            <div class="detail">
+              <span class="icon">⌖</span>
+              <strong>YER</strong>
+              <p>Bornova Nikah Salonu</p>
+            </div>
+
+          </div>
+
+          <p class="footer-text">
+            Sizleri bekliyoruz
+          </p>
+
+        </article>
+
+        <div class="envelope-flap"></div>
+
+        <div class="envelope-front"></div>
+
+        <div class="seal">
+          ZA
+        </div>
+
+      </div>
+
+      <button
+        class="open-button"
+        id="openButton"
+        type="button"
+      >
+        Zarfı Aç
+      </button>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
