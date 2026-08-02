@@ -181,9 +181,29 @@ body {
 }
 
 .invitation-scene.opened .invitation-card {
-  z-index: 6;
-  opacity: 1;
-  transform: translateY(-170px) scale(1);
+    z-index: 6;
+    opacity: 1;
+    transform: translateY(-170px) scale(1);
+    animation: cardRise 1.3s cubic-bezier(.22,1,.36,1);
+}
+
+@keyframes cardRise {
+
+    0%{
+        opacity:0;
+        transform:translateY(220px) scale(.90);
+    }
+
+    60%{
+        opacity:1;
+        transform:translateY(-190px) scale(1.03);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateY(-170px) scale(1);
+    }
+
 }
 
 .invitation-scene.opened .open-button {
