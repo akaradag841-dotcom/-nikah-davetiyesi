@@ -211,3 +211,28 @@ transition:.3s;
 transform:scale(1.05);
 
 }
+.invitation-card{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:320px;
+    transform:translate(-50%,40px) scale(.9);
+    opacity:0;
+    z-index:6;
+    transition:all 1.2s ease;
+    background:transparent;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:none;
+}
+
+.davetiye-gorsel{
+    width:100%;
+    display:block;
+    border-radius:20px;
+}
+
+.invitation-scene.opened .invitation-card{
+    opacity:1;
+    transform:translate(-50%,-180px) scale(1);
+}
