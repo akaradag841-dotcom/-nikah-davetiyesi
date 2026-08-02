@@ -1,7 +1,14 @@
-const envelope = document.getElementById("envelope");
-const button = document.getElementById("openBtn");
+document.addEventListener("DOMContentLoaded", function () {
+  const envelope = document.getElementById("envelope");
+  const openBtn = document.getElementById("openBtn");
 
-button.addEventListener("click", () => {
-    envelope.classList.add("opened");
-    button.style.display = "none";
+  openBtn.addEventListener("click", function () {
+    envelope.classList.toggle("open");
+
+    if (envelope.classList.contains("open")) {
+      openBtn.textContent = "Zarfı Kapat";
+    } else {
+      openBtn.textContent = "Zarfı Aç";
+    }
+  });
 });
