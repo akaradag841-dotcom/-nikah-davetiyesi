@@ -615,3 +615,238 @@ h1 {
     margin-top: 62px;
   }
 }
+.details {
+  width: min(92%, 720px);
+  margin: 0 auto;
+  padding: 20px 0 80px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(35px);
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease,
+    visibility 0.8s;
+}
+
+.details.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.countdown-card,
+.information-card {
+  border: 1px solid rgba(197, 155, 71, 0.25);
+  border-radius: 25px;
+  background: rgba(255, 253, 248, 0.9);
+  box-shadow: 0 18px 38px rgba(79, 63, 42, 0.12);
+}
+
+.countdown-card {
+  padding: 25px 16px;
+  text-align: center;
+}
+
+.section-label {
+  margin-bottom: 18px;
+  color: #c59b47;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.time-box {
+  padding: 14px 4px;
+  border-radius: 16px;
+  background: #f5eddf;
+}
+
+.time-box strong {
+  display: block;
+  color: #45573b;
+  font-size: clamp(25px, 8vw, 42px);
+  line-height: 1;
+}
+
+.time-box span {
+  display: block;
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+.information-card {
+  margin-top: 20px;
+  padding: 10px 22px;
+}
+
+.information-item {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid rgba(197, 155, 71, 0.18);
+}
+
+.information-item:last-child {
+  border-bottom: none;
+}
+
+.icon {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #f3e7cf;
+  font-size: 22px;
+}
+
+.information-item small {
+  display: block;
+  margin-bottom: 3px;
+  color: rgba(62, 55, 46, 0.62);
+  font-size: 15px;
+}
+
+.information-item strong {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.action-buttons {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.action-button {
+  min-height: 61px;
+  padding: 13px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: #5e704f;
+  color: white;
+
+  text-decoration: none;
+  font-size: 21px;
+  cursor: pointer;
+
+  box-shadow: 0 10px 22px rgba(69, 87, 59, 0.18);
+}
+
+.action-button:active {
+  transform: scale(0.97);
+}
+
+.action-button.whatsapp {
+  background: #4f7556;
+}
+
+.footer-message {
+  margin-top: 42px;
+  text-align: center;
+  color: rgba(62, 55, 46, 0.72);
+  font-size: 21px;
+}
+
+.couple-name {
+  margin-top: 3px;
+  text-align: center;
+  color: #c59b47;
+  font-family: "Great Vibes", cursive;
+  font-size: 45px;
+}
+
+.confetti-container {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.confetti {
+  position: absolute;
+  top: -25px;
+  width: 9px;
+  height: 15px;
+  border-radius: 2px;
+  animation: confettiFall 3.8s linear forwards;
+}
+
+@keyframes confettiFall {
+  from {
+    opacity: 1;
+    transform: translateY(-20px) rotate(0deg);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(110vh) rotate(720deg);
+  }
+}
+
+@media (min-width: 650px) {
+  .action-buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .action-button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    justify-content: flex-start;
+    padding-top: 45px;
+  }
+
+  .opening-text {
+    margin-bottom: 10px;
+  }
+
+  .envelope-area {
+    padding-top: 105px;
+  }
+
+  .envelope {
+    width: 93vw;
+  }
+
+  .seal {
+    width: 70px;
+    height: 70px;
+  }
+
+  .seal span {
+    font-size: 30px;
+  }
+
+  .envelope.open .letter {
+    width: min(75%, 345px);
+    transform: translate(-50%, -50%);
+  }
+
+  .open-button {
+    margin-top: 62px;
+  }
+}
