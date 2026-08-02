@@ -1,111 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
-  <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+<meta charset="UTF-8">
 
-  <title>Zeynep & Ahmet | Nikâh Davetiyesi</title>
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+<title>
+Zeynep & Ahmet
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&display=swap"
+rel="stylesheet">
+
 </head>
 
 <body>
 
-  <main class="page">
+<div class="background"></div>
 
-    <section class="invitation-scene" id="invitationScene">
+<div class="particles"></div>
 
-      <div class="envelope">
+<div class="container">
 
-        <div class="envelope-back"></div>
+<div
+class="envelope"
+id="envelope">
 
-        <article class="invitation-card">
+<div class="envelope-back"></div>
 
-          <p class="small-title">
-            BİRLİKTE YAZDIĞIMIZ
-          </p>
+<div class="letter">
 
-          <p class="small-title">
-            EN GÜZEL HİKÂYE BAŞLIYOR
-          </p>
+<img
+src="davetiye.png"
+class="invitation-image"
+alt="Nikah Davetiyesi">
 
-          <div class="heart">♡</div>
+</div>
 
-          <h1>Z A</h1>
+<div class="envelope-front"></div>
 
-          <h2>Zeynep & Ahmet</h2>
+<div class="envelope-flap"></div>
 
-          <p class="message">
-            Bu özel günümüzde sizleri de aramızda görmekten
-            mutluluk duyarız.
-          </p>
+<div class="seal">
+ZA
+</div>
 
-          <div class="divider"></div>
+</div>
 
-          <div class="details">
+<button
+id="openBtn"
+class="open-button">
 
-            <div class="detail">
-              <span class="icon">♡</span>
-              <strong>TARİH</strong>
-              <p>4 Eylül 2026</p>
-            </div>
+Zarfı Aç
 
-            <div class="detail">
-              <span class="icon">◷</span>
-              <strong>SAAT</strong>
-              <p>15:30</p>
-            </div>
+</button>
 
-            <div class="detail">
-              <span class="icon">⌖</span>
-              <strong>YER</strong>
-              <p>Bornova Nikah Salonu</p>
-            </div>
+</div>
 
-          </div>
-
-          <p class="footer-text">
-            Sizleri bekliyoruz
-          </p>
-
-        </article>
-
-        <div class="envelope-flap"></div>
-
-        <div class="envelope-front"></div>
-
-        <div class="seal">
-          ZA
-        </div>
-
-      </div>
-
-      <button
-        class="open-button"
-        id="openButton"
-        type="button"
-      >
-        Zarfı Aç
-      </button>
-
-    </section>
-
-  </main>
-
- <script>
-const scene = document.getElementById("invitationScene");
-const button = document.getElementById("openButton");
-
-button.addEventListener("click", function () {
-    scene.classList.add("opened");
-    button.disabled = true;
-});
-</script>
+<script src="script.js"></script>
 
 </body>
+
 </html>
